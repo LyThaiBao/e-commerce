@@ -1,0 +1,350 @@
+{
+  "products": [
+    {
+      "man": [
+        {
+          "id": 1,
+          "name": "Áo Thun Polo Basic Nam",
+          "image": [
+            "./img/product/product1.png",
+            "./img/product/product1_2.png"
+          ],
+          "price": 110.0,
+          "sold": "10k+",
+          "ranting": "4.9",
+          "description": {
+            "content": "Menswear Shirt là sản phẩm áo thun polo nam đơn giản nhưng cực kỳ sang trọng và thanh lịch.",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 2,
+          "name": "Bộ quần áo thun nam in chữ Bravery",
+          "image": [
+            "./img/product/product2_1.png",
+            "./img/product/product2_2.png"
+          ],
+          "price": 68.2,
+          "sold": "20k+",
+          "ranting": "4.9",
+          "description": {
+            "content": "Menswear Shirt là sản phẩm áo thun polo nam đơn giản nhưng cực kỳ sang trọng và thanh lịch.",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 3,
+          "name": "Áo khoác hoodie zip nam nữ ",
+          "image": [
+            "./img/product/product3_1.png",
+            "./img/product/product3_2.png"
+          ],
+          "price": 80.0,
+          "sold": "15k+",
+          "ranting": "4.8",
+          "description": {
+            "content": "Áo khoác hoodie zip nam nữ form rộng, áo hoodie nam nữ có mũ 2 lớp kiểu dáng Basic thời trang Unisex Hàn Quốc",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 4,
+          "name": "Áo thun nam nữ unisex tay lỡ PHG3 ",
+          "image": [
+            "./img/product/product4_1.png",
+            "./img/product/product4_2.png"
+          ],
+          "price": 70000,
+          "sold": "10k+",
+          "ranting": "4.6",
+          "description": {
+            "content": "Áo thun nam, áo thun nữ tay lỡ unisex, áo phông cotton form rộng oversize streetwear Phong cách Hàn Quốc",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 5,
+          "name": "Áo sơ mi ngắn tay form rộng, thời trang hiện đại",
+          "image": [
+            "./img/product/product5_1.png",
+            "./img/product/product5_2.png"
+          ],
+          "price": 90000,
+          "sold": "40k+",
+          "ranting": "4.9",
+          "description": {
+            "content": "Áo thun nam, áo thun nữ tay lỡ unisex, áo phông cotton form rộng oversize streetwear Phong cách Hàn Quốc",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 6,
+          "name": "Quần Kaki Ống Suông PN STORE Vải Đẹp Mềm Thoáng Mát ",
+          "image": [
+            "./img/product/product6_1.png",
+            "./img/product/product6_2.png"
+          ],
+          "price": 120000,
+          "sold": "35k+",
+          "ranting": "4.8",
+          "description": {
+            "content": "Áo thun nam, áo thun nữ tay lỡ unisex, áo phông cotton form rộng oversize streetwear Phong cách Hàn Quốc",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 7,
+          "name": "QUẦN NỈ NAM, QUẦN NỈ BÔNG NAM MẶC Ở NHÀ ",
+          "image": [
+            "./img/product/product7_1.png",
+            "./img/product/product7_2.png"
+          ],
+          "price": 80000,
+          "sold": "15k+",
+          "ranting": "4.7",
+          "description": {
+            "content": "Áo thun nam, áo thun nữ tay lỡ unisex, áo phông cotton form rộng oversize streetwear Phong cách Hàn Quốc",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 8,
+          "name": "Quần Jean Nam Cotton 10 Màu Co Dãn ",
+          "image": [
+            "./img/product/product8_1.png",
+            "./img/product/product8_2.png"
+          ],
+          "price": 200000,
+          "sold": "15k+",
+          "ranting": "4.7",
+          "description": {
+            "content": "Áo thun nam, áo thun nữ tay lỡ unisex, áo phông cotton form rộng oversize streetwear Phong cách Hàn Quốc",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 9,
+          "name": "Quần dài nam thể thao mịn mát thun POLY khóa kéo túi",
+          "image": [
+            "./img/product/product9_1.png",
+            "./img/product/product9_2.png"
+          ],
+          "price": 120000,
+          "sold": "10k+",
+          "ranting": "4.6",
+          "description": {
+            "content": "Áo thun nam, áo thun nữ tay lỡ unisex, áo phông cotton form rộng oversize streetwear Phong cách Hàn Quốc",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        },
+        {
+          "id": 10,
+          "name": "Quần short nam unisex màu đen ",
+          "image": [
+            "./img/product/product10_1.png",
+            "./img/product/product10_2.png"
+          ],
+          "price": 50000,
+          "sold": "11k+",
+          "ranting": "4.8",
+          "description": {
+            "content": "Áo thun nam, áo thun nữ tay lỡ unisex, áo phông cotton form rộng oversize streetwear Phong cách Hàn Quốc",
+            "origin": "Việt Nam",
+            "material": "Vải cao cấp: Áo có chất liệu vải cá sấu co giãn 4 chiều cao cấp, cho bạn sự thoải mái và dễ chịu khi mặc. Cổ bẻ sang trọng: Thiết kế với cổ bẻ thời trang tạo nên điểm nhấn cho sản phẩm này."
+          }
+        }
+      ]
+    },
+    {
+      "girl": []
+    },
+    {
+      "child": []
+    }
+  ],
+  "feelback": [
+    {
+      "man": [
+        {
+          "id": 1,
+          "userName": "Ly Thai Bao",
+          "content": "Xịn nha mấy bạn ơi :))"
+        },
+        {
+          "id": 2,
+          "userName": "Ngo Tran Phuc Bao",
+          "content": " Mặc vừa vặn, khá là ưng!"
+        },
+        {
+          "id": 3,
+          "userName": "Truong Hoang Long",
+          "content": "Hàng giống với mẫu nha các bạn!"
+        },
+        {
+          "id": 4,
+          "userName": "Vo Thanh Thai",
+          "content": "Nói chung phù hợp giá tiền"
+        },
+        {
+          "id": 5,
+          "userName": "Phan Truong Long",
+          "content": "Ổn áp phết đấy:)"
+        },
+        {
+          "id": 6,
+          "userName": "Thach Thai Son",
+          "content": "Hàng nào của đấy thôi"
+        },
+        {
+          "id": 7,
+          "userName": "Son Phan Gia Huy",
+          "content": "Hàng có vẻ chắc chắn đấy"
+        },
+        {
+          "id": 8,
+          "userName": "Kiem Nhut Tri",
+          "content": "5 sao nha shop =))"
+        },
+        {
+          "id": 9,
+          "userName": "Duong Thanh Phu",
+          "content": "Nói chung cũng ổn"
+        },
+        {
+          "id": 10,
+          "userName": "Dinh Tri Hao",
+          "content": "Vói giá tiền này không đòi hỏi gì thêm"
+        }
+      ],
+      "girl": [
+        {
+          "id": 1,
+          "userName": "Thach Anh Thu",
+          "content": "Xịn nha mấy bạn ơi :))"
+        },
+        {
+          "id": 2,
+          "userName": "To Thi Tu Trinh",
+          "content": " Mặc vừa vặn, khá là ưng!"
+        },
+        {
+          "id": 3,
+          "userName": "Huynh Thi Bao Tram",
+          "content": "Hàng giống với mẫu nha các bạn!"
+        },
+        {
+          "id": 4,
+          "userName": "Nhu Y",
+          "content": "Nói chung phù hợp giá tiền"
+        },
+        {
+          "id": 5,
+          "userName": "Bao Ngoc",
+          "content": "Ổn áp phết đấy:)"
+        },
+        {
+          "id": 6,
+          "userName": "Tran Thi Cam Tien",
+          "content": "Hàng nào của đấy thôi"
+        },
+        {
+          "id": 7,
+          "userName": "Thach Thi Cam Tien",
+          "content": "Hàng có vẻ chắc chắn đấy"
+        },
+        {
+          "id": 8,
+          "userName": "Diem Kieu",
+          "content": "5 sao nha shop =))"
+        },
+        {
+          "id": 9,
+          "userName": "Hy Nha",
+          "content": "Nói chung cũng ổn"
+        },
+        {
+          "id": 10,
+          "userName": "Trum Fi Fai",
+          "content": "Vói giá tiền này không đòi hỏi gì thêm"
+        }
+      ],
+      "child": [
+        {
+          "id": 1,
+          "userName": "Tran Van Toan",
+          "content": "Xịn nha mấy bạn ơi :))"
+        },
+        {
+          "id": 2,
+          "userName": "Ku Tin",
+          "content": " Bé nhà mình thích lắm"
+        },
+        {
+          "id": 3,
+          "userName": "Van Ngoan",
+          "content": "Con mình khá là thích"
+        },
+        {
+          "id": 4,
+          "userName": "Nhut Huy",
+          "content": "Nói chung phù hợp giá tiền"
+        },
+        {
+          "id": 5,
+          "userName": "Trum lien quan",
+          "content": "Ổn áp phết đấy:)"
+        },
+        {
+          "id": 6,
+          "userName": "Be Quay",
+          "content": "Hàng nào của đấy thôi"
+        },
+        {
+          "id": 7,
+          "userName": "Siu nhan do",
+          "content": "Hàng có vẻ chắc chắn đấy"
+        },
+        {
+          "id": 8,
+          "userName": "Hehe",
+          "content": "5 sao nha shop =))"
+        },
+        {
+          "id": 9,
+          "userName": "Trum bom hang",
+          "content": "Nói chung cũng ổn"
+        },
+        {
+          "id": 10,
+          "userName": "Trum Fi Fai",
+          "content": "Vói giá tiền này không đòi hỏi gì thêm"
+        }
+      ]
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Áo Thun Polo Basic Nam",
+      "image": "./img/product/product1.png",
+      "price": 110.0,
+      "quality": 1
+    },
+    {
+      "id": 2,
+      "name": "Bộ quần áo thun nam in chữ Bravery",
+      "image": "./img/product/product2_1.png",
+      "price": 130000,
+      "quality": 5
+    }
+  ]
+}
