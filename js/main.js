@@ -1,18 +1,23 @@
-let quality = document.querySelector("input[name='quality']");
-
-const cartApi = "http://localhost:3000/cart";
-async function getData(callback) {
-  const response = await fetch(cartApi);
-  const carts = await response.json();
-  callback(carts);
+function handleToggle() {
+  let barIcon = document.querySelector(".bar__icon");
+  let btnClose = document.querySelector(".fa-xmark");
+  let navigation = document.querySelector(".header__list");
+  let overlay = document.querySelector(".overlay");
+  toggleBlock(barIcon, navigation, "display__navbar", "hide__navbar");
+  toggleBlock(btnClose, navigation, "hide__navbar", "display__navbar");
+  toggleBlock(btnClose, overlay, "hide", "display");
+  toggleBlock(barIcon, overlay, "display", "hide");
+  toggleBlock(overlay, navigation, "hide__navbar", "display__navbar");
+  toggleBlock(overlay, overlay, "hide", "display");
 }
-
-function render(data) {
-  let number = data.map((cart) => {
-    quality.value = cart.quality;
+function toggleBlock(iconClick, block, classNameAdd, classNameDelete) {
+  iconClick.addEventListener("click", (e) => {
+    block.classList.add(`${classNameAdd}`);
+    block.classList.remove(`${classNameDelete}`);
   });
 }
+handleToggle();
 
-document.addEventListener("DOMContentLoaded", () => {
-  getData(render);
-});
+fetch(" http://localhost:3000/products")
+  .then((r) => r.json())
+  .then((data) => console.log(data));

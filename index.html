@@ -3,10 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- link icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>E-Commerce</title>
   </head>
   <body>
-    <input type="number" name="quality" id="" />
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__nav">
+          <span class="bar__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+
+          <div class="header__logo"><a href="">LOGO</a></div>
+          <div class="overlay hide"></div>
+          <div class="header__list">
+            <div class="list__mobile">
+              <div class="logo">LOGO</div>
+              <div class="close" style="cursor: pointer">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="header__choose">
+              <div class="header__choose--item header__home">TRANG CHỦ</div>
+              <div class="header__choose--item header__intro">GIỚI THIỆU</div>
+              <div class="header__choose--item header__category">
+                DANH MUC SẢN PHẨM
+              </div>
+              <div class="header__choose--item header__new">TIN TỨC</div>
+              <div class="header__choose--item header__contact">LIÊN HỆ</div>
+            </div>
+          </div>
+          <div class="header__cart">
+            <img src="./img/product/cart.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
   </body>
-  <script src="./main.js"></script>
+  <script src="./js/main.js"></script>
 </html>
