@@ -19,9 +19,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="root.css" />
     <title>E-Commerce</title>
   </head>
-  <body>
+  <body style="height: 10000vh">
     <header class="header">
       <div class="wrapper">
         <div class="header__nav">
@@ -53,10 +54,60 @@
           <div class="header__cart">
             <img src="./img/product/cart.png" alt="" />
           </div>
+          <div class="block__cart hide__cart">
+            <div class="cart__head">
+              <span>Giỏ hàng</span>
+              <i class="fa-solid fa-xmark" style="cursor: pointer"></i>
+            </div>
+          </div>
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <div class="wrapper">
+        <div class="main__intro">
+          <div class="main__picture">
+            <img src="./img/thumbnail-in-home-page-mobile.jpg" alt="" />
+          </div>
+          <div class="main__text">
+            <div class="main__infor">
+              <span class="main__slogan"
+                >Tranhslogan.vn - Khơi Nguồn Cảm Hứng</span
+              >
+              <h1 class="main__tilte">Thổi Hồn Không Gian Sống & Làm Việc</h1>
+              <p class="main__desc">
+                Tranh in trên vải canvas cao cấp – bền đẹp, sắc nét, đậm chất
+                riêng
+              </p>
+            </div>
+            <div class="main__input">
+              <div class="main__box--input">
+                <input type="text" placeholder="Tim kiem" />
+              </div>
+              <select class="main__box--dropdown">
+                <option value="">Tat ca danh muc</option>
+                <option value="">ao</option>
+                <option value="">quan</option>
+                <option value=""></option>
+              </select>
+              <button
+                class="submit"
+                type="submit"
+                style="height: 40px; width: 45px"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="main__quality">
+              <div class="main__score">
+                Được tin dùng bởi hơn 500 đơn vị kể từ năm 2022
+              </div>
+              <h2 class="main__result">2.500 Đơn Hàng+</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer"></footer>
   </body>
   <script src="./js/main.js"></script>
