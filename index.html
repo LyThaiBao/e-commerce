@@ -18,21 +18,24 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="root.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/root.css" />
     <title>E-Commerce</title>
   </head>
-  <body style="height: 10000vh">
+
+  <body>
     <header class="header">
       <div class="wrapper">
         <div class="header__nav">
+          <a target="_parent" href="./detail.html">Detail</a>
+
           <span class="bar__icon">
             <span></span>
             <span></span>
             <span></span>
           </span>
 
-          <div class="header__logo"><a href="">LOGO</a></div>
+          <div class="header__logo"><a target="_blank" href="">LOGO</a></div>
           <div class="overlay hide"></div>
           <div class="header__list hide__navbar">
             <div class="list__mobile">
@@ -42,17 +45,36 @@
               </div>
             </div>
             <div class="header__choose">
-              <a href="" class="header__choose--item header__home active">
+              <a
+                target="_blank"
+                href="./index.html"
+                class="header__choose--item header__home active"
+              >
                 TRANG CHỦ
               </a>
-              <a href="" class="header__choose--item header__intro"
+              <a
+                target="_blank"
+                href="./detail.html"
+                class="header__choose--item header__intro"
                 >GIỚI THIỆU</a
               >
-              <a href="" class="header__choose--item header__category">
+              <a
+                target="_blank"
+                href=""
+                class="header__choose--item header__category"
+              >
                 DANH MUC SẢN PHẨM
               </a>
-              <a href="" class="header__choose--item header__new">TIN TỨC</a>
-              <a href="" class="header__choose--item header__contact"
+              <a
+                target="_blank"
+                href=""
+                class="header__choose--item header__new"
+                >TIN TỨC</a
+              >
+              <a
+                target="_blank"
+                href=""
+                class="header__choose--item header__contact"
                 >LIÊN HỆ</a
               >
             </div>
@@ -125,9 +147,9 @@
           </div>
           <div class="main__items">
             <section class="item">
-              <div class="item__img">
+              <a target="_blank" href="./detail.html" class="item__img">
                 <img src="" alt="" />
-              </div>
+              </a>
               <div class="item__text">
                 <div class="item__name"></div>
                 <div class="item__para"></div>
@@ -173,7 +195,7 @@
               </svg>
               Ninh Kiều, Cần Thơ
             </div>
-            <a href="">
+            <a target="_blank" href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -348,5 +370,5 @@
       </div>
     </footer>
   </body>
-  <script src="./js/main.js"></script>
+  <script type="module" src="./js/home/index.js"></script>
 </html>
