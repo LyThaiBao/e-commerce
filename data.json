@@ -6,6 +6,8 @@
         "type": "man",
         "name": "Áo Thun Polo Basic Nam",
         "image": ["./img/product/product1.png", "./img/product/product1_2.png"],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
         "price": 110000,
         "sold": "10k+",
         "ranting": "4.9",
@@ -23,6 +25,8 @@
           "./img/product/product2_1.png",
           "./img/product/product2_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
         "price": 68200,
         "sold": "20k+",
         "ranting": "4.9",
@@ -40,6 +44,8 @@
           "./img/product/product3_1.png",
           "./img/product/product3_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
         "price": 80000,
         "sold": "15k+",
         "ranting": "4.8",
@@ -57,6 +63,8 @@
           "./img/product/product4_1.png",
           "./img/product/product4_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
         "price": 70000,
         "sold": "10k+",
         "ranting": "4.6",
@@ -74,6 +82,9 @@
           "./img/product/product5_1.png",
           "./img/product/product5_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 90000,
         "sold": "40k+",
         "ranting": "4.9",
@@ -91,6 +102,9 @@
           "./img/product/product6_1.png",
           "./img/product/product6_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 120000,
         "sold": "35k+",
         "ranting": "4.8",
@@ -108,6 +122,9 @@
           "./img/product/product7_1.png",
           "./img/product/product7_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 80000,
         "sold": "15k+",
         "ranting": "4.7",
@@ -125,6 +142,9 @@
           "./img/product/product8_1.png",
           "./img/product/product8_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 200000,
         "sold": "15k+",
         "ranting": "4.7",
@@ -142,6 +162,9 @@
           "./img/product/product9_1.png",
           "./img/product/product9_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 120000,
         "sold": "10k+",
         "ranting": "4.6",
@@ -159,6 +182,9 @@
           "./img/product/product10_1.png",
           "./img/product/product10_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 50000,
         "sold": "11k+",
         "ranting": "4.8",
@@ -178,6 +204,9 @@
           "./img/product/product11_1.webp",
           "./img/product/product11_2.webp"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 110000,
         "sold": "10k+",
         "ranting": "4.9",
@@ -195,6 +224,9 @@
           "./img/product/product12_1.webp",
           "./img/product/product12_2.webp"
         ],
+        "color": ["#fff"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 68200,
         "sold": "20k+",
         "ranting": "4.9",
@@ -212,6 +244,9 @@
           "./img/product/product13_1.webp",
           "./img/product/product13_2.webp"
         ],
+        "color": ["blue", "#eee"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 80000,
         "sold": "15k+",
         "ranting": "4.8",
@@ -229,6 +264,9 @@
           "./img/product/product14_1.webp",
           "./img/product/product14_2.webp"
         ],
+        "color": ["#eee", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 70000,
         "sold": "10k+",
         "ranting": "4.6",
@@ -246,6 +284,9 @@
           "./img/product/product15_1.webp",
           "./img/product/product15_2.webp"
         ],
+        "color": ["#eee", "blue"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 90000,
         "sold": "40k+",
         "ranting": "4.9",
@@ -263,6 +304,9 @@
           "./img/product/product16_1.webp",
           "./img/product/product16_2.webp"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 120000,
         "sold": "35k+",
         "ranting": "4.8",
@@ -280,6 +324,9 @@
           "./img/product/product17_1.webp",
           "./img/product/product17_2.webp"
         ],
+        "color": ["#333", "green"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 80000,
         "sold": "15k+",
         "ranting": "4.7",
@@ -297,6 +344,9 @@
           "./img/product/product18_1.webp",
           "./img/product/product18_2.webp"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 200000,
         "sold": "15k+",
         "ranting": "4.7",
@@ -314,6 +364,9 @@
           "./img/product/product19_1.webp",
           "./img/product/product19_2.webp"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 120000,
         "sold": "10k+",
         "ranting": "4.6",
@@ -331,6 +384,9 @@
           "./img/product/product20_1.webp",
           "./img/product/product20_2.webp"
         ],
+        "color": ["blue"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 50000,
         "sold": "11k+",
         "ranting": "4.8",
@@ -350,6 +406,9 @@
           "./img/product/product21_1.webp",
           "./img/product/product21_2.webp"
         ],
+        "color": ["blue", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 110000,
         "sold": "10k+",
         "ranting": "4.9",
@@ -367,6 +426,9 @@
           "./img/product/product22_1.webp",
           "./img/product/product22_2.webp"
         ],
+        "color": ["yellow", "red"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 68200,
         "sold": "20k+",
         "ranting": "4.9",
@@ -384,6 +446,9 @@
           "./img/product/product23_1.webp",
           "./img/product/product23_2.webp"
         ],
+        "color": ["#333", "#blue"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 80000,
         "sold": "15k+",
         "ranting": "4.8",
@@ -401,6 +466,9 @@
           "./img/product/product24_1.webp",
           "./img/product/product24_2.webp"
         ],
+        "color": ["red", "#fff"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 70000,
         "sold": "10k+",
         "ranting": "4.6",
@@ -418,6 +486,9 @@
           "./img/product/product25_1.webp",
           "./img/product/product25_2.webp"
         ],
+        "color": ["#fff", "blue"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 90000,
         "sold": "40k+",
         "ranting": "4.9",
@@ -435,6 +506,9 @@
           "./img/product/product26_1.webp",
           "./img/product/product26_2.webp"
         ],
+        "color": ["#fff", "yellow"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 120000,
         "sold": "35k+",
         "ranting": "4.8",
@@ -452,6 +526,9 @@
           "./img/product/product27_1.webp",
           "./img/product/product27_2.webp"
         ],
+        "color": ["pink", "#fff"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 80000,
         "sold": "15k+",
         "ranting": "4.7",
@@ -469,6 +546,9 @@
           "./img/product/product8_1.png",
           "./img/product/product8_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 200000,
         "sold": "15k+",
         "ranting": "4.7",
@@ -486,6 +566,9 @@
           "./img/product/product9_1.png",
           "./img/product/product9_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 120000,
         "sold": "10k+",
         "ranting": "4.6",
@@ -503,6 +586,9 @@
           "./img/product/product10_1.png",
           "./img/product/product10_2.png"
         ],
+        "color": ["#fff", "#333"],
+        "size": ["S", "M", "L", "XL"],
+
         "price": 50000,
         "sold": "11k+",
         "ranting": "4.8",
