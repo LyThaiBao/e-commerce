@@ -5,18 +5,18 @@ import {
   showSlide,
   getProduct,
   renderProductDetail,
-  handleQuality,
-  addActiveColorAndSize,
+  handleChose,
+  renderFeedback,
 } from "./controller.js";
-let slides = document.querySelectorAll(".gallery__slide");
+
 async function start() {
   handleToggleCart();
   handleToggleNav();
-  handleQuality();
   addClassActive();
-  addActiveColorAndSize();
+  getProduct(renderFeedback);
   await getProduct(renderProductDetail);
   showSlide(0);
+  handleChose();
 }
 
 start();

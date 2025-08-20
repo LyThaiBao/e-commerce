@@ -1,5 +1,5 @@
 const productsApi = "http://localhost:3000/products";
-const feedbackApi = "http://localhost:3000/feelback";
+const feedbackApi = "http://localhost:3000/feedback";
 const cartsApi = "http://localhost:3000/cart";
 
 // ---------------Function fetch Api product và feedback-----------------
@@ -12,7 +12,3 @@ export async function getProduct(callback) {
   callback(response);
   return response;
 }
-
-
-
-

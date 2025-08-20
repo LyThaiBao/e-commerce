@@ -600,7 +600,7 @@
       }
     ]
   },
-  "feelback": {
+  "feedback": {
     "man": [
       {
         "id": 1,
@@ -705,7 +705,7 @@
         "content": "Vói giá tiền này không đòi hỏi gì thêm"
       }
     ],
-    "child": [
+    "children": [
       {
         "id": 1,
         "userName": "Tran Van Toan",

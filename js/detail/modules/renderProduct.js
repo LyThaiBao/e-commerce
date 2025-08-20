@@ -47,6 +47,33 @@ export function renderProductDetail(data) {
   productColor[1].style.backgroundColor =
     currentProduct.color[1] != undefined ? currentProduct.color[1] : "orange";
   // --------------------------Size--------------------------------------------
+  productSize.innerHTML = `
+ <strong>Size:</strong>
+  <span>${currentProduct?.size[0]}</span>
+  <span>${currentProduct?.size[1]}</span>
+  <span>${currentProduct?.size[2]}</span>
+  <span>${currentProduct?.size[3]}</span>
+`;
 
-  return currentProduct;
+  // ------------------------Render Detail product--------------------------------
+  let detailProduct = document.querySelector(".main__detail");
+  detailProduct.innerHTML = `
+  <h3>Chi tiết sản phẩm</h3>
+  <h4>Mô tả sản phẩm</h4>
+  <div class = "text">
+    <p class="content">${currentProduct.description.content}</p>
+    <p class="origin">Xuất Sứ: ${currentProduct.description.origin}</p>
+    <p class="material">${currentProduct.description.material}</p>
+  </div>
+   <div style ="color:orange; cursor:pointer" class="btn__more--less"><i style ="transform: rotate(180deg)" class="fa-solid fa-circle-chevron-down"></i>Thu gọn</div>
+  `;
+  let showMoreLessBtn = document.querySelector(".btn__more--less");
+  showMoreLessBtn.addEventListener("click", (e) => {
+    detailProduct.querySelector(".text").classList.toggle("active");
+    if (detailProduct.querySelector(".text").classList.contains("active")) {
+      detailProduct.lastElementChild.innerHTML = `<i class="fa-solid fa-circle-chevron-down"></i>Thêm`;
+    } else {
+      detailProduct.lastElementChild.innerHTML = `<i  style ="transform: rotate(180deg)" class="fa-solid fa-circle-chevron-down"></i>Thu gọn`;
+    }
+  });
 }

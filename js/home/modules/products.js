@@ -21,6 +21,7 @@ export function formatVND(amount) {
 }
 // -----------------------Lưu thông tin (id và type) product được click vào localstorage----------
 window.saveIdProduct = (productId, productType) => {
+  // window.nameFunction tức là khai báo hàm global 
   localStorage.setItem(
     "information",
     JSON.stringify({ id: productId, type: productType })
