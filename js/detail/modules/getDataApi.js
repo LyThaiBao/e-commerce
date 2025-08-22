@@ -1,6 +1,6 @@
-const productsApi = "http://localhost:3000/products";
-const feedbackApi = "http://localhost:3000/feedback";
-const cartsApi = "http://localhost:3000/cart";
+const productsApi = "https://e-commerce-z2wx.onrender.com/api/products";
+const feedbackApi = "https://e-commerce-z2wx.onrender.com/api/feedback";
+const cartsApi = "https://e-commerce-z2wx.onrender.com/api/cart";
 
 // ---------------Function fetch Api product và feedback-----------------
 export async function getProduct(callback) {
