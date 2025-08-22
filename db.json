@@ -529,7 +529,7 @@
         "color": ["pink", "#fff"],
         "size": ["S", "M", "L", "XL"],
 
-        "price": 80000,
+        "price": 8000,
         "sold": "15k+",
         "ranting": "4.7",
         "description": {
