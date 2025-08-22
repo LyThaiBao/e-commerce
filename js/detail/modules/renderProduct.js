@@ -1,18 +1,16 @@
 import { formatVND } from "../controller.js";
-// -----------------Varibale lưu thông tin product của sản phẩm đã click-------------------
+// -----------------Varibale lưu thông tin product của sản phẩm đã click đã được lưu ở localStorage-------------------
 let informationOfProductTarget = JSON.parse(
   localStorage.getItem("information")
 );
 
-// console.log(informationOfProductTarget);
 // ----------Function render ra UI------------------------------------
 export function renderProductDetail(data) {
-  // console.log(1);
   // -----Chỉ lấy phần data products----------------------------------
   let productsGirl = data[0].girl;
   let productsMan = data[0].man;
   let productsChildren = data[0].children;
-  // -------Trộn 3 mảng ----------------------------------------------
+  // -------Trộn 3 mảng sản phẩm  man , girl, children ----------------------------------------------
   let allProducts = [...productsMan, ...productsGirl, ...productsChildren];
   // -----------Lấy product có thông tin lưu ở localStorage-------------
   let currentProduct = allProducts.find(
@@ -20,17 +18,15 @@ export function renderProductDetail(data) {
       product.id === informationOfProductTarget.id &&
       product.type === informationOfProductTarget.type
   );
-  // console.log(currentProduct);
 
   // ---------------------Show UI--------------------------
   let gallery = document.querySelector(".gallery__slider");
-  let productName = document.querySelector(".product__name");
+  let productName = document.querySelector(".product__name--detail");
   let productPrice = document.querySelector(".product__price span");
   let productColor = document.querySelectorAll(".product__color span");
   let productSize = document.querySelector(".product__size");
-  // console.log(productColor);
   // --------------------Render--------------------------------------
-  // --------------------Image---------------------------------------
+  // --------------------Image of gallery---------------------------------------
   gallery.innerHTML = `
   <div class="gallery__slide active">
                 <img src="${currentProduct.image[0]}" alt="" />
@@ -39,14 +35,17 @@ export function renderProductDetail(data) {
                 <img src="${currentProduct.image[1]}" alt="" />
      </div>
   `;
-  // ---------------------Name_Price_Color-------------------------------------
+  // ---------------------Name_Price_Color of product-------------------------------------
+  //NAME
   productName.innerHTML = currentProduct.name;
+  //PRICE
   productPrice.innerHTML = formatVND(currentProduct.price);
+  //COLOR
   productColor[0].style.backgroundColor =
     currentProduct.color[0] != undefined ? currentProduct.color[0] : "orange";
   productColor[1].style.backgroundColor =
     currentProduct.color[1] != undefined ? currentProduct.color[1] : "orange";
-  // --------------------------Size--------------------------------------------
+  // --------------------------Render box Size--------------------------------------------
   productSize.innerHTML = `
  <strong>Size:</strong>
   <span>${currentProduct?.size[0]}</span>
@@ -55,7 +54,7 @@ export function renderProductDetail(data) {
   <span>${currentProduct?.size[3]}</span>
 `;
 
-  // ------------------------Render Detail product--------------------------------
+  // ------------------------Render Description product--------------------------------
   let detailProduct = document.querySelector(".main__detail");
   detailProduct.innerHTML = `
   <h3>Chi tiết sản phẩm</h3>

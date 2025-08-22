@@ -17,8 +17,8 @@ html {
   font-size: 62.5%;
 }
 /* -------------Ẩn mũi tên----------- */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.product__quantity input[type="number"]::-webkit-outer-spin-button,
+.product__quantity input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -111,6 +111,48 @@ input[type="number"]::-webkit-inner-spin-button {
 .hide__cart {
   transform: translateX(100vw);
 }
+.cart__content {
+  overflow-y: scroll;
+  height: 85%;
+}
+.cart__content--product {
+  gap: 5px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product__img {
+  flex-basis: 20%;
+}
+.product__img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.product__name {
+  font-size: 1.5rem;
+  flex-basis: 40%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.product__quality {
+  flex-basis: 20%;
+}
+.product__quality input {
+  width: 80%;
+  text-align: center;
+}
+.cart__content--product button {
+  flex-basis: 10%;
+  height: 23px;
+}
+.size {
+  font-size: 1.4rem;
+  flex-basis: 20%;
+}
 .overlay {
   z-index: 3;
   position: fixed;
@@ -155,6 +197,7 @@ input[type="number"]::-webkit-inner-spin-button {
   right: 0;
   top: 0;
   bottom: 0;
+  /* height: 80vh; */
   width: 80vw;
   background-color: #fff;
   padding: 20px 10px;

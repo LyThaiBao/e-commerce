@@ -85,7 +85,21 @@
               <span>Giỏ hàng</span>
               <i class="fa-solid fa-xmark" style="cursor: pointer"></i>
             </div>
-            <div class="cart__content"></div>
+            <div class="cart__content">
+              <section class="cart__content--product">
+                <div class="product__img">
+                  <img src="./img/product/product5_1.png" alt="" />
+                </div>
+                <div class="product__name">Áo Xấu Quắt không ai thèm mặt</div>
+                <div class="product__quality">
+                  <input type="number" name="quality" id="" min="1" value="1" />
+                </div>
+                <button>DELETE</button>
+              </section>
+            </div>
+            <div class="cart__total--price" style="text-align: right">
+              <strong>Tổng số lượng sản phẩm: </strong>50.000
+            </div>
             <button class="cart__submit">Đi tới giỏ hàng</button>
           </div>
         </div>
@@ -113,11 +127,11 @@
                 <div class="main__box--input">
                   <input type="text" placeholder="Tim kiem" />
                 </div>
-                <select class="main__box--dropdown">
-                  <option value="">Tat ca danh muc</option>
-                  <option value="">ao</option>
-                  <option value="">quan</option>
-                  <option value=""></option>
+                <select id="filterProduct" class="main__box--dropdown">
+                  <option value="Tat ca danh muc">Tat ca danh muc</option>
+                  <option value="man">Nam</option>
+                  <option value="girl">Nữ</option>
+                  <option value="children">Trẻ em</option>
                 </select>
                 <button
                   class="submit"
@@ -372,4 +386,5 @@
     </footer>
   </body>
   <script type="module" src="./js/home/index.js"></script>
+  <script type="module" src="./js/cart/index.js"></script>
 </html>

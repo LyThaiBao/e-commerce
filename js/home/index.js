@@ -4,6 +4,7 @@ import {
   getProductsData,
   renderHomeProduct,
   addClassActive,
+  filterProduct,
 } from "./controller.js";
 // import { goToDeTail } from "./controller.js";
 function start() {
@@ -11,6 +12,7 @@ function start() {
   handleToggleNav();
   getProductsData(renderHomeProduct);
   addClassActive();
+  getProductsData(filterProduct);
 }
 
 // function localStorage() {

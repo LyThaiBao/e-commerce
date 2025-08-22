@@ -1,9 +1,9 @@
 export async function renderFeedback(data) {
   let typeOfProduct = JSON.parse(localStorage.getItem("information")).type;
-  console.log(typeOfProduct);
+  // console.log(typeOfProduct);
 
   const feedbacks = data[1][typeOfProduct]; // [] thứ 2 truy cập object bằng bracket notation
-  console.log(feedbacks);
+  // console.log(feedbacks);
 
   //-------------------------Render feedback-----------------------------------------
   let containFeedback = document.querySelector(".core__feedback");

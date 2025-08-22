@@ -1,11 +1,19 @@
+import { renderProductInCart } from "../controller.js";
 export function handleChose() {
-  let containAllProductAddCart = [];
+  let containAllProductAddCart =
+    JSON.parse(localStorage.getItem("productAddCart")) || [];
+
+  //  Lấy data trong localStorage để chuẩn bị render
+  let allProductInLocalStorange =
+    JSON.parse(localStorage.getItem("productAddCart")) || [];
+
   var productInfo = {
     name: "",
     price: 0,
     color: null,
     size: null,
     quantity: 1,
+    image: null,
   };
   let pointColor = document.querySelectorAll(".product__color span");
   let sizes = document.querySelectorAll(".product__size span");
@@ -51,6 +59,11 @@ export function handleChose() {
     valueChose = boxInput.value;
     productInfo.quantity = valueChose;
   });
+  //-----------------Typing by hand of box Input---------
+  boxInput.addEventListener("change", (e) => {
+    valueChose = boxInput.value;
+    productInfo.quantity = valueChose;
+  });
   // ----------------Reduce Value-------------------------
   btnReduce.addEventListener("click", (e) => {
     boxInput.value = boxInput.value == 1 ? 1 : boxInput.value - 1;
@@ -61,12 +74,20 @@ export function handleChose() {
   // Parent of detail product
   let DetailProduct = document.querySelector(".product__price").parentElement;
   //==================Here return name and price================
-  let nameProduct = DetailProduct.querySelector(".product__name").innerText;
+  let nameProduct = DetailProduct.querySelector(
+    ".product__name--detail"
+  ).innerText;
   productInfo.name = nameProduct;
   let priceProduct = Number(
     DetailProduct.querySelector(".product__price").innerText.trim().slice(4, 11)
   );
   productInfo.price = priceProduct;
+
+  //============ Here return image======================
+  console.log(JSON.parse(localStorage.getItem("information")));
+  let img = document.querySelector(".gallery__slide img").getAttribute("src");
+  productInfo.image = img;
+
   let btnAddCart = document
     .querySelector(".addCart")
     .addEventListener("click", (e) => {
@@ -82,6 +103,7 @@ export function handleChose() {
           "productAddCart",
           JSON.stringify(containAllProductAddCart)
         );
+        renderProductInCart();
       }
     });
 }
