@@ -4,10 +4,16 @@ const fs = require("fs");
 const app = express();
 const port = process.env.PORT || 3000;
 
+// 🔥 THÊM DÒNG NÀY - Phục vụ static files (HTML, CSS, JS, images)
+app.use(express.static(__dirname));
+
 // CORS middleware
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   next();
 });
 
@@ -45,9 +51,9 @@ app.get("/api/products/:type/:id", (req, res) => {
   const data = readData();
   const type = req.params.type;
   const id = parseInt(req.params.id);
-  
+
   if (data.products[type]) {
-    const product = data.products[type].find(item => item.id === id);
+    const product = data.products[type].find((item) => item.id === id);
     if (product) {
       res.json(product);
     } else {
@@ -81,20 +87,9 @@ app.get("/api/cart", (req, res) => {
   res.json(data.cart);
 });
 
-// Route test
+// Route test - sửa thành phục vụ file index.html
 app.get("/", (req, res) => {
-  res.json({ 
-    message: "Server is running!",
-    endpoints: {
-      all_data: "/api/db",
-      all_products: "/api/products",
-      products_by_type: "/api/products/:type",
-      product_by_id: "/api/products/:type/:id",
-      all_feedback: "/api/feedback",
-      feedback_by_type: "/api/feedback/:type",
-      cart: "/api/cart"
-    }
-  });
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 // Khởi động server

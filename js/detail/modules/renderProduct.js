@@ -6,6 +6,8 @@ let informationOfProductTarget = JSON.parse(
 
 // ----------Function render ra UI------------------------------------
 export function renderProductDetail(data) {
+  console.log(data);
+
   // -----Chỉ lấy phần data products----------------------------------
   let productsGirl = data[0].girl;
   let productsMan = data[0].man;
