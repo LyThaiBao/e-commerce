@@ -7,35 +7,93 @@ const port = process.env.PORT || 3000;
 // CORS middleware
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
 
-// Route API
-app.get("/api/db", (req, res) => {
+// Hàm đọc file JSON
+function readData() {
   const filePath = path.join(__dirname, "db.json");
+  const data = fs.readFileSync(filePath, "utf8");
+  return JSON.parse(data);
+}
 
-  // Kiểm tra file có tồn tại không
-  if (!fs.existsSync(filePath)) {
-    return res.status(500).json({
-      error: "File db.json not found",
-      currentDirectory: __dirname,
-      files: fs.readdirSync(__dirname),
-    });
-  }
-
-  // Gửi file JSON
-  res.sendFile(filePath);
+// Route chính - toàn bộ data
+app.get("/api/db", (req, res) => {
+  res.sendFile(__dirname + "/db.json");
 });
 
-// Route test để kiểm tra server
+// Route lấy tất cả products
+app.get("/api/products", (req, res) => {
+  const data = readData();
+  res.json(data.products);
+});
+
+// Route lấy products theo type (man, girl, children)
+app.get("/api/products/:type", (req, res) => {
+  const data = readData();
+  const type = req.params.type;
+  if (data.products[type]) {
+    res.json(data.products[type]);
+  } else {
+    res.status(404).json({ error: "Type not found" });
+  }
+});
+
+// Route lấy sản phẩm theo ID và type
+app.get("/api/products/:type/:id", (req, res) => {
+  const data = readData();
+  const type = req.params.type;
+  const id = parseInt(req.params.id);
+  
+  if (data.products[type]) {
+    const product = data.products[type].find(item => item.id === id);
+    if (product) {
+      res.json(product);
+    } else {
+      res.status(404).json({ error: "Product not found" });
+    }
+  } else {
+    res.status(404).json({ error: "Type not found" });
+  }
+});
+
+// Route lấy tất cả feedback
+app.get("/api/feedback", (req, res) => {
+  const data = readData();
+  res.json(data.feedback);
+});
+
+// Route lấy feedback theo type
+app.get("/api/feedback/:type", (req, res) => {
+  const data = readData();
+  const type = req.params.type;
+  if (data.feedback[type]) {
+    res.json(data.feedback[type]);
+  } else {
+    res.status(404).json({ error: "Feedback type not found" });
+  }
+});
+
+// Route lấy cart
+app.get("/api/cart", (req, res) => {
+  const data = readData();
+  res.json(data.cart);
+});
+
+// Route test
 app.get("/", (req, res) => {
-  res.json({
+  res.json({ 
     message: "Server is running!",
-    api_endpoint: "/api/db",
+    endpoints: {
+      all_data: "/api/db",
+      all_products: "/api/products",
+      products_by_type: "/api/products/:type",
+      product_by_id: "/api/products/:type/:id",
+      all_feedback: "/api/feedback",
+      feedback_by_type: "/api/feedback/:type",
+      cart: "/api/cart"
+    }
   });
 });
 

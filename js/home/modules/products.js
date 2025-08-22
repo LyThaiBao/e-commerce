@@ -1,4 +1,4 @@
-const productsApi = "http://localhost:3000/products";
+const productsApi = "https://e-commerce-z2wx.onrender.com/api/db";
 // import { goToDeTail } from "./goToDetail.js";
 // -------------------Fetch Data product---------------------
 
