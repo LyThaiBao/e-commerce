@@ -15,13 +15,13 @@ app.use((req, res, next) => {
 });
 
 // Route API
-app.get("/api/data", (req, res) => {
-  const filePath = path.join(__dirname, "data.json");
+app.get("/api/db", (req, res) => {
+  const filePath = path.join(__dirname, "db.json");
 
   // Kiểm tra file có tồn tại không
   if (!fs.existsSync(filePath)) {
     return res.status(500).json({
-      error: "File data.json not found",
+      error: "File db.json not found",
       currentDirectory: __dirname,
       files: fs.readdirSync(__dirname),
     });
@@ -35,7 +35,7 @@ app.get("/api/data", (req, res) => {
 app.get("/", (req, res) => {
   res.json({
     message: "Server is running!",
-    api_endpoint: "/api/data",
+    api_endpoint: "/api/db",
   });
 });
 
