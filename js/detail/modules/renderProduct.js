@@ -6,8 +6,6 @@ let informationOfProductTarget = JSON.parse(
 
 // ----------Function render ra UI------------------------------------
 export function renderProductDetail(data) {
-  console.log(data);
-
   // -----Chỉ lấy phần data products----------------------------------
   let productsGirl = data[0].girl;
   let productsMan = data[0].man;
@@ -28,7 +26,6 @@ export function renderProductDetail(data) {
   let productColor = document.querySelectorAll(".product__color span");
   let productSize = document.querySelector(".product__size");
   let containDetail = document.querySelector(".main__detail--product");
-  console.log(containDetail);
 
   // --------------------Render--------------------------------------
   // --------------------Image of gallery---------------------------------------

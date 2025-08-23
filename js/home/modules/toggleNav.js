@@ -44,9 +44,9 @@ export function handleToggleNav() {
 }
 export function addScrollBody() {
   let body = document.querySelector("body");
-  body.classList.add("no-scoll");
+  body.classList.add("no-scroll");
 }
 export function deleteScrollBody() {
   let body = document.querySelector("body");
-  body.classList.remove("no-scoll");
+  body.classList.remove("no-scroll");
 }

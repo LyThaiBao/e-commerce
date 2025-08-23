@@ -24,7 +24,7 @@ html {
 }
 /* ----------------------------------------- */
 /* -------------------header------------------- */
-.no-scoll {
+.no-scroll {
   height: 100vh !important;
   overflow: hidden;
 }

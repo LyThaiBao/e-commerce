@@ -96,6 +96,8 @@
 }
 .gallery__btn--prev,
 .gallery__btn--next {
+  color: orange;
+
   position: absolute;
   font-size: 3rem;
   z-index: 2;
@@ -340,6 +342,48 @@
   font-size: 1.3rem;
   margin: 10px 0;
 }
+/* -------------------Notification add product to cart----------- */
+.main__notificationAddProduct--success,
+.main__notificationAddProduct--missedColor,
+.main__notificationAddProduct--missedSize {
+  position: fixed;
+  right: 5px;
+  top: 80px;
+  padding: 30px 0px;
+  border-radius: 10px;
+  background: rgba(172, 255, 47, 0.925);
+  width: 45vw;
+  transform: translateX(100vw);
+  z-index: 3;
+}
+.translate {
+  transform: translateX(0);
+  animation: notification 0.5s linear 4s both;
+}
+/* .main__notificationAddProduct--success.active {
+  transform: translateX(0) !important;
+} */
+@keyframes notification {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  35% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 /* -----------------------Feedback---------------------------- */
 .main__feedback {
   font-size: 1.4rem;
@@ -466,8 +510,14 @@
   .main__highlight--ship,
   .main__highlight--guarantee,
   .main__highlight--card {
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 5);
+    margin-top: 4px;
     font-size: 1.5rem;
+  }
+  .main__notificationAddProduct--success,
+  .main__notificationAddProduct--missedColor,
+  .main__notificationAddProduct--missedSize {
+    width: 30vw;
   }
   /* --------------Detail Product----------------- */
   .text.active {

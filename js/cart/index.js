@@ -5,11 +5,10 @@ import {
   renderTotalProductIcon,
   renderTotalProductInCart,
 } from "./controller.js";
-// renderProductInCart();
 function start() {
   renderProductInCart();
   deleteProduct();
   calcTotalProduct(renderTotalProductIcon);
   calcTotalProduct(renderTotalProductInCart);
 }
-start();
+document.addEventListener("DOMContentLoaded", start);

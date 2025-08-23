@@ -1,12 +1,17 @@
-import { renderProductInCart } from "../controller.js";
+import {
+  notificationAddSuccessProduct,
+  notificationMissedColor,
+  notificationMissedSize,
+  renderProductInCart,
+} from "../controller.js";
 export function handleChose() {
-  let containAllProductAddCart =
-    JSON.parse(localStorage.getItem("productAddCart")) || [];
+  // Nếu lần đâì bào thì khởi tạo mảng rỗng, còn lần sau thì get localStorage
 
   //  Lấy data trong localStorage để chuẩn bị render
   let allProductInLocalStorange =
     JSON.parse(localStorage.getItem("productAddCart")) || [];
 
+  // Tạo object để lưu thông tin vào các trường
   var productInfo = {
     name: "",
     price: 0,
@@ -15,6 +20,7 @@ export function handleChose() {
     quantity: 1,
     image: null,
   };
+
   let pointColor = document.querySelectorAll(".product__color span");
   let sizes = document.querySelectorAll(".product__size span");
 
@@ -84,7 +90,6 @@ export function handleChose() {
   productInfo.price = priceProduct;
 
   //============ Here return image======================
-  console.log(JSON.parse(localStorage.getItem("information")));
   let img = document.querySelector(".gallery__slide img").getAttribute("src");
   productInfo.image = img;
 
@@ -93,16 +98,20 @@ export function handleChose() {
     .addEventListener("click", (e) => {
       // kiểm tra xem có trường nào rỗng ko
       if (productInfo.color == null) {
-        alert("vui long chon mau");
+        notificationMissedColor();
       } else if (productInfo.size == null) {
-        alert("vui long chon size");
+        notificationMissedSize();
       } else {
+        let containAllProductAddCart =
+          JSON.parse(localStorage.getItem("productAddCart")) || [];
+        // truyền object vào mảng chuẩn bị lưu
         containAllProductAddCart.push({ ...productInfo }); // dùng toán tử spead để truyền bản sao, nếu ko thì
         // nó tham chiếu trực tiếp đến productInfo làm tham đổi các giá trị trước đó
         localStorage.setItem(
           "productAddCart",
           JSON.stringify(containAllProductAddCart)
         );
+        notificationAddSuccessProduct();
         renderProductInCart();
       }
     });

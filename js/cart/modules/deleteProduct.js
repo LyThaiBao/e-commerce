@@ -7,19 +7,18 @@ import {
   renderTotalProductIcon,
 } from "../controller.js";
 export function deleteProduct(id) {
-  let allProduct = JSON.parse(localStorage.getItem("productAddCart"));
+  let allProduct = JSON.parse(localStorage.getItem("productAddCart")) || [];
   let deleteBtn = document.querySelectorAll(".cart__content--product button");
   //Duyet cac nut xoa
   deleteBtn.forEach((btn, index) =>
     btn.addEventListener("click", (e) => {
-      //Nut nao duoc click xoa product do
+      //Nut nao duoc click => xoa product do
       allProduct.splice(index, 1);
       localStorage.setItem("productAddCart", JSON.stringify(allProduct));
-      console.log(allProduct);
-      console.log(index);
       renderProductInCart();
       calcTotalProduct(renderTotalProductInCart);
       calcTotalProduct(renderTotalProductIcon);
+      console.log(allProduct);
     })
   );
 }
