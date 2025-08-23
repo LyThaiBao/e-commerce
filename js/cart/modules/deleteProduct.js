@@ -1,7 +1,11 @@
 //import hàm render product sau khi xóa
 import { renderProductInCart } from "../controller.js";
 //import hàm tính tổng sản phẩm sau khi xóa
-import { calcTotalProduct, renderTotalProductInCart } from "../controller.js";
+import {
+  calcTotalProduct,
+  renderTotalProductInCart,
+  renderTotalProductIcon,
+} from "../controller.js";
 export function deleteProduct(id) {
   let allProduct = JSON.parse(localStorage.getItem("productAddCart"));
   let deleteBtn = document.querySelectorAll(".cart__content--product button");
@@ -15,6 +19,7 @@ export function deleteProduct(id) {
       console.log(index);
       renderProductInCart();
       calcTotalProduct(renderTotalProductInCart);
+      calcTotalProduct(renderTotalProductIcon);
     })
   );
 }

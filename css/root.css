@@ -24,6 +24,10 @@ html {
 }
 /* ----------------------------------------- */
 /* -------------------header------------------- */
+.no-scoll {
+  height: 100vh !important;
+  overflow: hidden;
+}
 .wrapper {
   /* border: 1px red solid; */
   max-width: 1200px;
@@ -221,7 +225,7 @@ html {
   border-radius: 15px;
 }
 .header__cart::before {
-  content: "1";
+  content: attr(data-count);
   text-align: center;
   width: 18px;
   height: 18px;
@@ -288,6 +292,7 @@ html {
     transition: opacity 0.5s ease, transform 0.5s linear;
     bottom: -5px;
     left: 50%;
+
     transform: translateX(-50%);
     border-radius: 20px;
     content: "";

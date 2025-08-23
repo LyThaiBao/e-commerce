@@ -5,6 +5,7 @@ export function calcTotalProduct(callback) {
 }
 export function renderTotalProductIcon(sum) {
   let iconNotificationCart = document.querySelector(".header__cart");
+  iconNotificationCart.setAttribute("data-count",sum);
 }
 export function renderTotalProductInCart(sum) {
   let totalProduct = document.querySelector(".cart__total--price");

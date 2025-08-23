@@ -29,4 +29,5 @@ export function renderProductInCart() {
   deleteProduct();
   //gọi hàm update số lượng sản phẩm
   calcTotalProduct(renderTotalProductInCart);
+  calcTotalProduct(renderTotalProductIcon);
 }
